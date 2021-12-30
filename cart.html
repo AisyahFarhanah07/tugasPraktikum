@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>Aisyah Farhanah</title>
+</head>
+<body style="max-width: 1000px;border: 2px solid black;margin: auto;">
+  <header style="background-color: gainsboro;">
+    <nav style="display: flex;padding: 15px;border-bottom: 2px solid black;"> 
+      <ul style="display: flex;list-style-type: none;gap: 15px;display: flex;gap: 7px;" class="logo">
+        <li>
+          <a style="text-decoration: none" href=>Site Name</a>>
+        </li>
+      </ul>
+
+      <ul style="display: flex;list-style-type: none;gap: 15px;display: flex;gap: 5px;display: flex;list-style-type: none;gap: 15px;"class="menu-ul"> 
+        <li> <!-- Home --> 
+          <a href="/">Home</a> |
+        </li> 
+        <li> <!--- Current -->
+          <a href="/events">Current Events</a> |
+        </li> 
+        <li> <!-- Contact -->
+          <a href="/contact">Contact us</a>
+        </li> 
+      </ul style="display: flex;"> 
+
+      <ul style="display: flex;list-style-type: none;gap: 15px;display: flex;gap: 5px;display: flex;list-style-type: none;gap: 15px;margin-left: auto;"class="icon-ul">
+        <li>
+          <i class="bi bi-search"></i>
+        </li>
+        <li style="display: flex;gap: 5px;" class="cart">
+          <i class="bi bi-cart"></i>
+          <p>Cart(1)</p>
+        </li>
+      </ul style="display: flex;">
+    </nav>
+  </header>
+
+  <div style="display: flex;gap: 20px;margin-top: 100px;padding: 10px;" class="container">
+    <main style="width: 60%;">
+      <h1>Your Cart</h1>
+      <table style="width: 100%;border-collapse: collapse;">
+        <thead>
+          <tr>
+            <td class="col-head style='border-top: 2px solid black;border-bottom: 2px solid black;'">Item</td>
+            <td class="col-head style='border-top: 2px solid black;border-bottom: 1px solid black;'">Price</td>
+            <td class="col-head style='border-top: 2px solid black;border-bottom: 1px solid black;'">Quantity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="T-Shirt">
+              <img style="display: flex;align-items: center;" width="200" src="download.jpg" alt="">
+              <p>T-Shirt <br>All Size</p>
+            </td>
+            <td>
+              <b>$20.00</b>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="col-head style='border-top: 1px solid black;border-bottom: 1px solid black;'" colspan="3" align="center">Subtotal: <b>$20.00</b></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <aside style="width: 50%;background-color: gray;padding: 19px;display: grid;align-items: center;">
+      <h2>Summary ( 1 item )</h2>
+      <table style="width: 100%;padding: 10px 0;">
+        <tr>
+          <td>Subtotal</td>
+          <td align="center" aria-hidden="true"></i>$20.00</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td align="center">-</td>
+        </tr>
+        <tr>
+          <td>Est. Taxes</td>
+          <td align="center">-</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td align="center">$20.00</td>
+        </tr>
+      </table>
+      <a style="display: flex;justify-content: center;background-color: rgb(137, 170, 100);width: 100%;text-decoration: none;padding: 10px 0;" class="btn-checkout" href="checkout.html">Checkout</a>
+    </aside style="width: 40%;background-color: gray;padding: 10px;display: grid;align-items: center;">
+  </div>
+
+  <footer style="margin-top: 100px;border-top: 1px solid rgb(0, 0, 0);padding: 10px;display: grid;gap: 10px;">
+    <div style="display: flex;gap: 5px;" class="b1">
+      <a style="margin-left: auto;" href="">Site Name</a>
+      <a style="margin-left: auto;" href="">Category</a> |
+      <a style="margin-left: auto;" href="">Category</a> |
+      <a style="margin-left: auto;" href="">Category</a> 
+      <a style="margin-left: auto;" href="">Stay In Touch</a>
+    </div>
+    <div style="display: flex;gap: 5px;" class="baris">
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <div style="display: flex;margin-left: auto;background-color: grey;" class="input-subscribe" >
+        <input type="text" style="font: weight 20px;" placeholder="Enter Email">
+        <p>Subscribe</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
