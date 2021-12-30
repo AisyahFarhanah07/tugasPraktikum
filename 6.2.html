@@ -1,0 +1,57 @@
+<!doctype html>
+<head>
+<title>6.2</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .ji {
+    background: #e7a7ad;
+    flex: 1;
+  }
+  .ju {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+
+  .hi {
+    display: flex;
+    flex-direction: row;
+  }
+  .hi > article {
+    flex: 3;
+    min-height: 60vh;
+    background-color: white;
+  }
+  .hi > aside {
+    background: rgb(70, 207, 207);
+    flex: 1;
+  }
+  header, footer {
+    background:rgb(238, 201, 122);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+</head>
+<body>
+  <nav class="ji">Nav</nav>
+  <div class="ju">
+  	<header>Header</header>
+    <main class="hi">
+    <article>Article</article>
+    <aside>Aside</aside>
+    </main>
+  	<footer>Footer</footer>
+  </div>
+</body>
+</html>
