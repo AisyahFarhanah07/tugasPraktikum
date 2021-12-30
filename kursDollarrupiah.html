@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form">
+        <table style="width: 100%;">
+        <tr>
+        <td>Mata Uang Asing</td>
+        <td>
+        <select name="uangasing" onchange="konversiuang()">
+        <option value="pilih">-- Pilih Mata Uang Asing --</option>
+        <option value="USD">Dollar US</option>
+        </select>
+        </td>
+        </tr>
+        
+        <tr>
+        <td><label for="nilai">Nilai</label></td>
+        <td><input type="text" name="nilai"></td>
+        </tr>
+        
+        <tr>
+        <td><label for="kurs">Hasil Kurs</label></td>
+        <td><input type="text" name="kurs"></td>
+        </tr>
+        
+        <tr>
+        <td><button type="submit" class="btn btn-primary" onClick="konversiuang()">SUBMIT</button></td>
+        <td><button type="reset" class="btn btn-danger">RESET</button></td>
+        </tr>
+        
+        </table>
+        </form> 
+        <script>
+            function konversiuang() {
+	var input = (document.form.nilai.value);
+	var hitunguang = (document.form.uangasing.value);
+	
+	var hasil = 0;
+
+	if(hitunguang == "USD"){
+		hasil = input*9915;
+	}
+	document.form.kurs.value=eval(hasil); 
+
+	
+} 
+
+        </script>
+</body>
+</html>
