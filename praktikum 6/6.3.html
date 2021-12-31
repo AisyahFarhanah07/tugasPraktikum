@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>6.3</title>
+    <style>
+        body{
+            background-color: rgb(240, 152, 152);
+        }
+        header, footer, aside, article{
+            padding: 10px;
+            margin: 10px;
+        }
+        header, footer {
+            background: rgb(191, 191, 236);
+            height: 15vh;
+            margin: 10px;
+        }
+        #er{
+            margin: 10px;
+            display: flex;
+            height: 25em;
+        }
+        #er > aside{
+            flex: 2;
+            background-color: lightseagreen;
+        }
+        #er > article{
+            padding-top: 9em;
+            flex: 3;
+            
+            background-color: rgb(235, 96, 96);
+        }
+        #af{
+            display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+        }
+        .ji{
+            margin-right: 2em;
+            margin-left: 2em;
+        }
+        h2{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header><h2>Header</h2></header>
+    <div id="er">
+        <aside><h2>Aside</h2></aside>
+    <article>
+    <h2>Article</h2>
+    <div id="af">
+        <div class="ji"><img src="1.jpg" width="200" height="120"></div>
+        <div class="ji"><img src="2.JPG" width="200" height="120"></div>
+        <div class="ji"><img src="3.JPG" width="200" height="120"></div>
+    </div>
+    </div>
+    
+</article>
+    <footer><h2>Footer</h2></footer>
+</body>
+</html>
