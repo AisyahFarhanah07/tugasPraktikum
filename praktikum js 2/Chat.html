@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        .container {
+    width: 100%;
+}
+
+#box {
+    width: 35%;
+    height: 400px;
+    padding: 0px 5px;
+    border: 2px solid black;
+}
+input[type=text]{
+    width: 80%;
+}
+.container_kirim {
+    width: 35%;
+    border: 2px solid darkblue;
+}
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div id="box"></div>
+            <div class="container_kirim">
+                <input type="text" value="" id="pesan">
+                <button type="submit" id="kirim">kirim</button> 
+            </div>        
+        </div>
+        <script>
+        const chatBox = document.getElementById('box');
+        const inputPesan = document.getElementById('pesan');
+        const btnKirim = document.getElementById('kirim');
+        btnKirim.onclick = function(){
+            const p = document.createElement("P");
+            chatBox.appendChild(p);
+            p.innerHTML = inputPesan.value;
+        }
+        </script>
+</body>
+</html>
